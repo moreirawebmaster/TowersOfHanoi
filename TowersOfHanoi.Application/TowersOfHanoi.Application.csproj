@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Histories\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMoq" Version="2.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TowersOfHanoi.CrossCutting.Test\TowersOfHanoi.CrossCutting.Test.csproj" />
+    <ProjectReference Include="..\TowersOfHanoi.CrossCutting\TowersOfHanoi.CrossCutting.csproj" />
+    <ProjectReference Include="..\TowersOfHanoi.Domain\TowersOfHanoi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
